@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  background-color: #f8f7fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+li {
+  position: relative;
+}
+
+li.active{
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity,1));
+}
+li.active span{
+color:white;
+}
+li.active::after{
+  content: '';
+  background: #00d0ff;
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+.side-bsr{
+  background-color: #242745;
+  width: 200px;
+}
+.main-container{
+ max-width: 1280px;
+ width: 100%;
+ margin: 0px auto;
+}
+.pt-5 {
+  padding-top: 0.75rem;
+}
+label.ant-checkbox-wrapper.ant-checkbox-group-item.css-dev-only-do-not-override-1vr7spz {
+  display: flex;
+  flex-direction: column-reverse;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-checkbox-group {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  display: inline-flex;
+  flex-wrap: wrap;
+  column-gap: 59px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #6366F1;
+  border-color: #6366F1;
+}
+.ant-checkbox-checked .ant-checkbox-inner :hover{
+  background-color: #6366F1;
+  border-color: #6366F1;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-checkbox .ant-checkbox-inner {
+  border: 1px solid #B0A9F7;
+}
+@media (max-width:580px) {
+  .profile-content{
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 5%;
+  }
+}
+.next-btn{
+ justify-content: right;
+ justify-content : space-between;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.roles-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.active {
+  color: #6366f1;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-tbody >tr >td {
+ 
+  border-bottom: 1px solid #cbcbcb;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-thead >tr>td {
+  position: relative;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  text-align: start;
+  background: white;
+  border-bottom: 1px solid #cbcbcb;
+
+}
+.ant-table {
+  border: 1px solid #cbcbcb;
+  border-bottom: none;
+  border-radius: 1px !important;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap, :where(.css-dev-only-do-not-override-1vr7spz).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-wrap {
+  /* position: relative; */
+  display: flex;
+  flex: auto;
+  align-self: stretch;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translate(0);
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
